@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/Lobster-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'PTSerif';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/PTSerif-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'BadScript';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/BadScript-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  src: url(./fonts/Raleway-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/Raleway-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/Raleway-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: url(./fonts/Raleway-SemiBold.ttf) format("truetype");
+}
