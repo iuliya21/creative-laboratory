@@ -1,32 +1,57 @@
 .description {
   margin: 0 auto;
   max-width: 1200px;
-  font-family: 'Raleway';
+}
+
+.author {
+  font-family: 'BadScript';
   font-style: normal;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: 15px auto;
+  text-decoration: underline;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  font-family: 'Rubik';
+}
+
+.list {
+  font-size: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.element {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.element:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .title {  
   text-align: center;
   font-weight: 600;
+  font-size: 28px;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  column-gap: 30px;
+  column-gap: 60px;
 }
 
-.image {
-  background-image: url(../../images/bear.jpeg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 360px;
-  height: 480px;
-}
-
-.text {
-  margin: 0;
-  max-width: 400px;
-  font-size: 22px;
-  font-weight: 400;
-}

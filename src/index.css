@@ -5,31 +5,10 @@ body {
 }
 
 @font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: url(./fonts/Lobster-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'PTSerif';
-  font-style: normal;
-  font-weight: 400;
-  src: url(./fonts/PTSerif-Regular.ttf) format("truetype");
-}
-
-@font-face {
   font-family: 'BadScript';
   font-style: normal;
   font-weight: 400;
   src: url(./fonts/BadScript-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'Raleway';
-  font-style: italic;
-  font-weight: 400;
-  src: url(./fonts/Raleway-Italic.ttf) format("truetype");
 }
 
 @font-face {
@@ -51,4 +30,18 @@ body {
   font-style: normal;
   font-weight: 600;
   src: url(./fonts/Raleway-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/Rubik-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: url(./fonts/Rubik-Medium.ttf) format("truetype");
 }

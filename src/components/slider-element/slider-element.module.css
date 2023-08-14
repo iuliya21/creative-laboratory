@@ -1,0 +1,20 @@
+.container {
+  /* background-image: url(../../images/bear.jpeg); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 360px;
+  height: 480px;
+  border-radius: 15px;
+  box-shadow: 8px 10px 5px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  margin: 0;
+  color: #000;
+  bottom: -30px;
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 20px;
+}
