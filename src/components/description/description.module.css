@@ -1,5 +1,5 @@
 .description {
-  margin: 0 auto;
+  margin: 0 auto 40px;
   max-width: 1200px;
 }
 
@@ -46,7 +46,7 @@ a:hover {
 .title {  
   text-align: center;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 22px;
 }
 
 .container {

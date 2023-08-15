@@ -1,0 +1,9 @@
+.slider {
+  max-width: 360px;
+  min-height: 420px;
+  border: 1px solid ;
+  display: flex;
+  column-gap: 15px;
+  justify-content: start;
+  overflow: hidden;
+}

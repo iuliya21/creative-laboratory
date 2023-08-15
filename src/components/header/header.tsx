@@ -8,6 +8,7 @@ const Header: React.FC = () => {
           <li><a href='#' className={styles.link}>Коллекции игрушек</a></li>
           <li><a href='#' className={styles.link}>О мастере</a></li>
           <li><a href='#' className={styles.link}>Доставка и оплата</a></li>
+          <li><a href='#' className={styles.link}>Отзывы</a></li>
         </ul>
       </nav>
     )
