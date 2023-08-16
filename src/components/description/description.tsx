@@ -11,22 +11,23 @@ const Description: React.FC = () => {
         <p className={styles.author}>Творческая мастерская Марины Мариновой</p>
         <div className={styles.container}>
           <Carousel>
-            {elementsSlider.map((item, index) => (
-              <SliderElement key={index} backgroundImageUrl={item.background} text={item.text} />
-            ))}
+            <img src="/images/bear.jpeg" alt="1" />
+            <img src="/images/bearJack.jpeg" alt="2" />
+            <img src="/images/frog.jpeg" alt="3" />
           </Carousel>
           <div className={styles.text}>
             <h1 className={styles.title}>Интерьерные игрушки ручной работы</h1>
             <ul className={styles.list}>
-              <li className={styles.element}><a href="#">Игрушки в технике исполнения teddy</a></li>
+              {/* <li className={styles.element}><a href="#">Игрушки в технике исполнения teddy</a></li>
               <li className={styles.element}><a href="#">Будуарные куклы из английского фарфора</a></li>
               <li className={styles.element}><a href="#">Игрушки, выполненные из дерева</a></li>
               <li className={styles.element}><a href="#">Куклы из пластика fimo</a></li>
               <li className={styles.element}><a href="#">Текстильные интерьерные игрушки</a></li>
-              <li className={styles.element}><a href="#">Ватные елочные игрушки</a></li>
+              <li className={styles.element}><a href="#">Ватные елочные игрушки</a></li> */}
             </ul>
           </div>
         </div>
+
       </div>
     </>
   );
