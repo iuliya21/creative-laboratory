@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Children, cloneElement, ReactElement } from 'react';
 import styles from './carousel.module.css';
-import { TbSquareRoundedChevronRightFilled, TbSquareRoundedChevronLeftFilled } from 'react-icons/tb';
+
 
 type CarouselProps = {
   children: ReactElement[];
@@ -12,8 +12,6 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
 
   const [pages, setPages] = useState<ReactElement[]>(children);
   const [offset, setOffset] = useState(0);
-  const [leftDisable, setLeftDisable] = useState('block');
-  const [rightDisable, setRightDisable] = useState('none');
 
   useEffect(() => {
     setPages(
@@ -26,31 +24,29 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
           }
         })
       })
-    )
+    );
+    // const interval = setInterval(() => {
+    //   handleClickRight();
+    // }, 2500)
+
+    // return () => {
+    //   clearInterval(interval);
+    // }
   }, []);
-
-  console.log(offset);
-
-  const handleClickLeft = () => {
-    setOffset((currentOffset) => {
-      const newOffset = currentOffset + CARD_WIDTH;
-      return Math.min(newOffset, 0);
-    })
-  }
 
   const handleClickRight = () => {
     setOffset((currentOffset) => {
       const newOffset = currentOffset - CARD_WIDTH;
       const maxOffset = -(CARD_WIDTH * (pages.length - 1));
-      return Math.max(newOffset, maxOffset);
+      if(maxOffset === currentOffset) {
+        return 0;
+      }
+      return newOffset;
     })
   }
 
   return (
     <div className={styles.mainContainer}>
-      <TbSquareRoundedChevronLeftFilled className={styles.arrow} size={35} onClick={handleClickLeft} style={{
-        display: `${leftDisable}`
-      }}/>
       <div className={styles.window}>
         <div className={styles.items} style={{
           transform: `translateX(${offset}px)`
@@ -58,7 +54,6 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
           {pages}
         </div>
       </div>
-      <TbSquareRoundedChevronRightFilled className={styles.arrow} size={35} onClick={handleClickRight} />
     </div>
   )
 }

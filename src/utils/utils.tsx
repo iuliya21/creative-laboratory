@@ -1,6 +1,6 @@
 export const elementsSlider = [
-  {background: '/images/bear.jpeg', text: '1'},
-  {background: '/images/bear.jpeg', text: '2'},
-  {background: '/images/bear.jpeg', text: '3'},
-  {background: '/images/bear.jpeg', text: '4'},
+  {url: '/images/bear.jpeg', text: 'Текстильные интерьерные игрушки'},
+  {url: '/images/flumo.jpeg', text: 'Игрушки из пластика fimo'},
+  {url: '/images/bear.jpeg', text: 'Текстильные интерьерные игрушки'},
+  {url: '/images/flumo.jpeg', text: 'Игрушки из пластика fimo'},
 ]

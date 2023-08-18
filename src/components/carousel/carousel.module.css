@@ -1,10 +1,8 @@
 .mainContainer {
-  width: 350px;
-  height: 360px;
+  height: 100%;
   display: flex;
   align-items: center;
   margin: 0 auto;
-  column-gap: 8px;
 }
 
 .window {
