@@ -1,6 +1,7 @@
 .description {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 850px;
+  
 }
 
 .author {
@@ -21,12 +22,21 @@
 }
 
 .container {
+  font-family: 'Raleway';
+  font-size: 18px;
+  line-height: 1.5;
   margin-top: 30px;
   display: flex;
   justify-content: center;
   column-gap: 10px;
 }
 
+.subtitleContainer {
+  padding-top: 40px;
+}
+
 .subtitle {
-  max-width: 400px;
+  max-width: 500px;
+  text-align: center;
+  margin: 0;
 }

@@ -1,0 +1,44 @@
+.card {
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-family: "Rubik";
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 160px;
+  border-radius: 5px;
+}
+
+.title {
+  margin: 0;
+  font-size: 14px;
+  text-align: end;
+}
+
+.price {
+  margin: 5px 0;
+  font-size: 14px;
+  text-align: end;
+}
+
+.buttons {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 0;
+  cursor: pointer;
+  font-family: "Rubik";
+  background-color: rgba(0, 0, 0, 0.95);
+  color: #fff;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
