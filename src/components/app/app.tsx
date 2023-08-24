@@ -4,12 +4,20 @@ import Header from '../header/header';
 import Main from '../main/main';
 import { getData } from '../../services/slice';
 import { useDispatch, useSelector } from 'react-redux';
-import { createSelector } from '@reduxjs/toolkit';
+import { AppDispatch, RootState } from '../../services/store';
+
+type Toy = {
+  category: string;
+  img: string;
+  name: string;
+  price: number;
+  description: string;
+  id: string;
+}
 
 const App: React.FC = () => {
-
+  
   const dispatch = useDispatch<AppDispatch>();
-  const toys = useSelector((store) => store.data.toys);
 
   useEffect(() => {
     dispatch(getData());
