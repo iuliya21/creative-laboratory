@@ -12,9 +12,10 @@ export const sliceToys = createSlice({
   name: "toys",
   initialState: {
     toys: [],
-    status: null,
+    status: "idle",
     error: null,
   },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(getData.pending, (state) => {

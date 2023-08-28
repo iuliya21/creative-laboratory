@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { sliceToys } from './slice';
+import { sliceToys } from './sliceGetData';
+import { sliceDetails } from './sliceDetailsToy';
 
 export const store = configureStore({
   reducer: {
     data: sliceToys.reducer,
+    details: sliceDetails.reducer,
   },
 });
 

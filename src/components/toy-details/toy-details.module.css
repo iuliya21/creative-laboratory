@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  font-family: "Rubik";
+  align-items: center;
+  color: #fff;
+}
+
+.title {
+  margin: 0;
+  font-size: 26px;
+}
+
+.image {
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+}
+
+.price {
+  margin: 0;
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0 70px 0 0;
+  align-self: flex-end;
+}
+
+.subtitle {
+  margin: 0 70px 0 0;
+  text-align: right;
+  font-size: 22px;
+  font-weight: 500;
+  align-self: flex-end;
+}
+
