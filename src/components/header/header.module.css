@@ -1,17 +1,30 @@
 .header {
-  font-family: 'BadScript';
+  font-family: "BadScript";
   font-size: 20px;
   padding: 20px 40px;
   background-color: rgba(0, 0, 0, 0.94);
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 25vw;
 }
 
 .list {
   list-style: none;
   display: flex;
-  justify-content: center;
   column-gap: 30px;
   margin: 0;
   padding: 0;
+}
+
+.social {
+  display: flex;
+  column-gap: 10px;
+}
+
+.linkSocial {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .link {
@@ -20,6 +33,11 @@
 }
 
 .link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.link.active {
   color: #fff;
   text-decoration: underline;
 }

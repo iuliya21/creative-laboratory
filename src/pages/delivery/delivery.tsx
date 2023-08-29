@@ -1,21 +1,34 @@
 import styles from "./delivery.module.css";
+import { TbTruckDelivery } from "react-icons/tb";
+import { BsCreditCard } from "react-icons/bs";
 
 const Delivery: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.text}>
-        <p className={styles.title}>Доставка</p>
+        <div className={styles.titleContainer}>
+          <p className={styles.title}>Доставка</p>
+          <TbTruckDelivery />
+        </div>
         <p className={styles.subtitle}>
-          Отправляю Почтой России, СДЭКом, Авито-доставкой, Boxberry на выбор
+          Отправляем Почтой России, СДЭКом, Авито-доставкой, Boxberry на выбор
           покупателя. Доставка оплачивается покупателем.
         </p>
         <p className={styles.subtitle}>
-          При отправке упакую в подарочную коробку
+          При отправке упакуем в подарочную коробку.
         </p>
-        <p className={styles.title}>Оплата</p>
+        <div className={styles.titleContainer}>
+          <p className={styles.title}>Оплата</p>
+          <BsCreditCard />
+        </div>
         <p className={styles.subtitle}>
           Оплата производится платежом на карту Сбербанка самозанятого. После
           оплаты покупателю высылается чек.
+        </p>
+        <p className={styles.subtitle}>
+          Для заказа Вы можете написать нам в группу Вконтакте либо оставить
+          заказ по WhatsApp или Telegram. Ссылки на наши соцсети находятся в правом верхнем
+          углу
         </p>
       </div>
       <img

@@ -4,7 +4,6 @@ import styles from "./modal.module.css";
 import { createPortal } from "react-dom";
 import ModalOverlay from "../modal-overlay/modal-overlay";
 import { IoMdClose } from "react-icons/io";
-import { write } from "fs";
 
 const modalRoot: HTMLElement | null = document.getElementById("react-modals");
 

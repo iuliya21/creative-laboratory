@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 10px;
   font-family: "Rubik";
   align-items: center;
   color: #fff;
@@ -9,7 +9,7 @@
 
 .title {
   margin: 0;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .image {
@@ -21,15 +21,15 @@
 .price {
   margin: 0;
   font-weight: 500;
-  font-size: 22px;
-  margin: 0 70px 0 0;
+  font-size: 18px;
+  margin: 0 60px 0 0;
   align-self: flex-end;
 }
 
 .subtitle {
-  margin: 0 70px 0 0;
+  margin: 0 60px 0 0;
   text-align: right;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   align-self: flex-end;
 }
