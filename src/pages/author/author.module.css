@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  max-width: 1200px;
+  width: 70vw;
+  margin: 70px auto 0;
+  padding-bottom: 50px;
+  column-gap: 35px;
+  border-bottom: 1px solid grey;
+}
+
+.image {
+  width: 405px;
+  height: 540px;
+}
+
+.aboutAuthor {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  margin: auto 0;
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: justify;
+  vertical-align: bottom;
+}
+
+.signature {
+  font-family: "BadScript";
+  font-size: 20px;
+  margin: 0;
+  text-align: end;
+}
