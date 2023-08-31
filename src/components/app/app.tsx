@@ -9,6 +9,8 @@ import { Routes, Route } from "react-router-dom";
 import Author from "../../pages/author/author";
 import Delivery from "../../pages/delivery/delivery";
 import Reviews from "../../pages/reviews/reviews";
+import Footer from "../footer/footer";
+import ToyDetails from "../toy-details/toy-details";
 
 const App: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -18,15 +20,20 @@ const App: React.FC = () => {
   }, [dispatch]);
 
   return (
-    <>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/author" element={<Author />} />
-        <Route path="/delivery" element={<Delivery />} />
-        <Route path="/reviews" element={<Reviews />} />
-      </Routes>
-    </>
+    <div className={styles.app}>
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Main />}>
+            <Route path="toy/:_id" element={<ToyDetails />} />
+          </Route>
+          <Route path="/author" element={<Author />} />
+          <Route path="/delivery" element={<Delivery />} />
+          <Route path="/reviews" element={<Reviews />} />
+        </Routes>
+      </div>
+      <Footer />
+    </div>
   );
 };
 
