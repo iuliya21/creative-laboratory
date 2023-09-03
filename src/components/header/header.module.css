@@ -5,7 +5,7 @@
   background-color: rgba(0, 0, 0, 0.94);
   display: flex;
   justify-content: flex-end;
-  column-gap: 25vw;
+  justify-content: space-between;
 }
 
 .list {
@@ -19,6 +19,8 @@
 .social {
   display: flex;
   column-gap: 10px;
+  align-items: start;
+  padding-top: 9px;
 }
 
 .linkSocial {

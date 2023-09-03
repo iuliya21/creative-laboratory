@@ -1,0 +1,45 @@
+.menu {
+  cursor: pointer;
+  min-width: 387px;
+  font-size: 16px;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  width: 100%;
+}
+
+.header {
+  color: #d3d3d3;
+  margin: 0;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #d3d3d3;
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
+}
+
+.triangle.active {
+  transform: rotate(180deg);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  color: #d3d3d3;
+}
+
+.listItem {
+  cursor: pointer;
+}
+
+.listItem:hover {
+  text-decoration: underline;
+}

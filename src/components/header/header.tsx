@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./header.module.css";
 import { NavLink } from "react-router-dom";
 import { SlSocialVkontakte } from "react-icons/sl";
 import { FaWhatsapp, FaTelegramPlane } from "react-icons/fa";
+import Menu from "../menu/menu";
+import { useSelector } from "react-redux";
+import { RootState } from "../../services/store";
+import { categories } from "../../utils/utils";
 
 const Header: React.FC = () => {
+
+  const categoryCurrent = useSelector((store: RootState) => store.category.categorySelected);
+
   return (
     <nav className={styles.header}>
+      <Menu header={categoryCurrent} items={categories} />
       <ul className={styles.list}>
         <li>
           <NavLink
@@ -60,8 +68,8 @@ const Header: React.FC = () => {
           <SlSocialVkontakte color="white" size={23} />
         </a>
         <a
-          href="https://wa.me/79998840821?text=Здравствуйте,%20хочу%20купить%20у%20Вас%20игрушку!"
           className={styles.linkSocial}
+          href="https://wa.me/79998840821?text=Здравствуйте,%20хочу%20купить%20у%20Вас%20игрушку!"
           target="_blank"
           rel="noopener noreferrer"
         >

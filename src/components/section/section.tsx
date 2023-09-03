@@ -1,6 +1,4 @@
-import Card from '../card/card';
 import styles from './section.module.css';
-import { Toys } from '../../utils/utils'; 
 
 type SectionProps = {
   title: string,
