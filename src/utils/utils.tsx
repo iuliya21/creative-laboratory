@@ -1,18 +1,18 @@
 export const elementsSlider = [
-  { url: "/images/slider/bear.jpeg", text: "Текстильные интерьерные игрушки" },
-  { url: "/images/slider/frog.jpeg", text: "Текстильные интерьерные игрушки" },
+  { url: "/creative-laboratory/images/slider/bear.jpeg", text: "Текстильные интерьерные игрушки" },
+  { url: "/creative-laboratory/images/slider/frog.jpeg", text: "Текстильные интерьерные игрушки" },
   {
-    url: "/images/slider/doll.jpeg",
+    url: "/creative-laboratory/images/slider/doll.jpeg",
     text: "Куклы из полимерной глины FIMO Doll",
   },
   {
-    url: "/images/slider/doll2.jpeg",
+    url: "/creative-laboratory/images/slider/doll2.jpeg",
     text: "Куклы из полимерной глины FIMO Doll",
   },
-  { url: "/images/slider/buratino.jpeg", text: "Деревянные игрушки" },
-  { url: "/images/slider/farfor.jpeg", text: "Куклы из английского фарфора" },
-  { url: "/images/slider/dragon.jpeg", text: "Эксклюзивные игрушки" },
-  { url: "/images/slider/newyear.jpeg", text: "Новогодние ватные игрушки" },
+  { url: "/creative-laboratory/images/slider/buratino.jpeg", text: "Деревянные игрушки" },
+  { url: "/creative-laboratory/images/slider/farfor.jpeg", text: "Куклы из английского фарфора" },
+  { url: "/creative-laboratory/images/slider/dragon.jpeg", text: "Эксклюзивные игрушки" },
+  { url: "/creative-laboratory/images/slider/newyear.jpeg", text: "Новогодние ватные игрушки" },
 ];
 
 export const allCategory = "Все"; 

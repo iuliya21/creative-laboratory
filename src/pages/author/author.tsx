@@ -3,7 +3,7 @@ import styles from "./author.module.css";
 const Author: React.FC = () => {
   return (
     <div className={styles.container}>
-      <img src="/images/author.jpeg" alt="Автор" className={styles.image} />
+      <img src="/creative-laboratory/images/author.jpeg" alt="Автор" className={styles.image} />
       <div className={styles.aboutAuthor}>
         <p className={styles.text}>
           Дорогие друзья, приветствую Вас в своём небольшом сказочном

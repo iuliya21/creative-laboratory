@@ -19,7 +19,7 @@ const Header: React.FC = () => {
         <li>
           <NavLink
             end
-            to="/"
+            to="/creative-laboratory/"
             className={({ isActive }) =>
               isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
             }
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
         </li>
         <li>
           <NavLink
-            to="/author"
+            to="/creative-laboratory/author"
             className={({ isActive }) =>
               isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
             }
@@ -39,7 +39,7 @@ const Header: React.FC = () => {
         </li>
         <li>
           <NavLink
-            to="/delivery"
+            to="/creative-laboratory/delivery"
             className={({ isActive }) =>
               isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
             }
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
         </li>
         <li>
           <NavLink
-            to="/reviews"
+            to="/creative-laboratory/reviews"
             className={({ isActive }) =>
               isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
             }
