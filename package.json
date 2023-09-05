@@ -2,6 +2,7 @@
   "name": "creative-laboratory",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://iuliya21.github.io/creative-laboratory",
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "@reduxjs/toolkit": "^1.9.5",
@@ -13,6 +14,7 @@
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@ya.praktikum/react-developer-burger-ui-components": "^1.14.0",
+    "gh-pages": "^6.0.0",
     "pure-react-carousel": "^1.30.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -25,6 +27,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start  --watch",
     "build": "react-scripts build",
     "test": "react-scripts test",
