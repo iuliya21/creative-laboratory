@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/creative-laboratory/static/css/main.da42acef.css",
+    "main.js": "/creative-laboratory/static/js/main.568867b2.js",
+    "static/media/Rubik-Medium.ttf": "/creative-laboratory/static/media/Rubik-Medium.0e121b4fa4d6e9bc5c69.ttf",
+    "static/media/Rubik-Regular.ttf": "/creative-laboratory/static/media/Rubik-Regular.55fa11cdc8b9a3ee842f.ttf",
+    "static/media/Raleway-Medium.ttf": "/creative-laboratory/static/media/Raleway-Medium.601cda68c7b7bbcc9a12.ttf",
+    "static/media/Raleway-SemiBold.ttf": "/creative-laboratory/static/media/Raleway-SemiBold.cc770b2afb65067aae51.ttf",
+    "static/media/BadScript-Regular.ttf": "/creative-laboratory/static/media/BadScript-Regular.a7245c626448ab33b310.ttf",
+    "index.html": "/creative-laboratory/index.html",
+    "main.da42acef.css.map": "/creative-laboratory/static/css/main.da42acef.css.map",
+    "main.568867b2.js.map": "/creative-laboratory/static/js/main.568867b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da42acef.css",
+    "static/js/main.568867b2.js"
+  ]
+}
