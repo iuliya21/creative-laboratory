@@ -1,21 +1,38 @@
 import React, { useState } from "react";
 import styles from "./header.module.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { SlSocialVkontakte } from "react-icons/sl";
 import { FaWhatsapp, FaTelegramPlane } from "react-icons/fa";
 import Menu from "../menu/menu";
 import { useSelector } from "react-redux";
 import { RootState } from "../../services/store";
 import { categories } from "../../utils/utils";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Header: React.FC = () => {
+  const categoryCurrent = useSelector(
+    (store: RootState) => store.category.categorySelected
+  );
 
-  const categoryCurrent = useSelector((store: RootState) => store.category.categorySelected);
+  const location = useLocation();
+  const isMainPage = location.pathname === "/creative-laboratory/";
+
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const handleMenu = () => {
+    setOpenMenu((prevState) => {
+      return !prevState;
+    });
+  };
 
   return (
     <nav className={styles.header}>
-      <Menu header={categoryCurrent} items={categories} />
-      <ul className={styles.list}>
+      {isMainPage ? <Menu header={categoryCurrent} items={categories} /> : ""}
+      <ul
+        className={
+          openMenu ? `${styles.list} ${styles.active}` : `${styles.list}`
+        }
+      >
         <li>
           <NavLink
             end
@@ -23,6 +40,7 @@ const Header: React.FC = () => {
             className={({ isActive }) =>
               isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
             }
+            onClick={() => handleMenu()}
           >
             Коллекции игрушек
           </NavLink>
@@ -33,6 +51,7 @@ const Header: React.FC = () => {
             className={({ isActive }) =>
               isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
             }
+            onClick={() => handleMenu()}
           >
             О мастере
           </NavLink>
@@ -43,6 +62,7 @@ const Header: React.FC = () => {
             className={({ isActive }) =>
               isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
             }
+            onClick={() => handleMenu()}
           >
             Доставка и оплата
           </NavLink>
@@ -53,6 +73,7 @@ const Header: React.FC = () => {
             className={({ isActive }) =>
               isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
             }
+            onClick={() => handleMenu()}
           >
             Отзывы
           </NavLink>
@@ -73,7 +94,7 @@ const Header: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaWhatsapp color="white" />
+          <FaWhatsapp color="white" size={21} />
         </a>
         <a
           href="tg://resolve?domain=iuliya_21"
@@ -81,8 +102,15 @@ const Header: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaTelegramPlane color="white" />
+          <FaTelegramPlane color="white" size={21} />
         </a>
+      </div>
+      <div className={styles.burgerMenu} onClick={() => handleMenu()}>
+        {openMenu ? (
+          <AiOutlineClose color="#D3D3D3" size={25} />
+        ) : (
+          <AiOutlineMenu color="#D3D3D3" size={25} />
+        )}
       </div>
     </nav>
   );
