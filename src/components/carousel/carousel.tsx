@@ -6,12 +6,37 @@ type CarouselProps = {
   children: ReactElement[];
 };
 
-const CARD_WIDTH = 270;
+const COUNT_CARDS = 6;
 
 const Carousel: React.FC<CarouselProps> = ({ children }) => {
 
   const [pages, setPages] = useState<ReactElement[]>(children);
   const [offset, setOffset] = useState(0);
+  const [cardWidth, setCardWidth] = useState(270);
+
+  const handleResize = () => {
+    if (window.innerWidth <= 530 && window.innerWidth > 400) {
+      setCardWidth(225);
+    } else if (window.innerWidth <= 400) {
+      setCardWidth(168);
+    };
+  }
+
+  // useEffect(() => {
+  //   window.addEventListener('resize', handleResize);
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, []);
+
+  const handleClickRight = () => {
+    setOffset((prevState) => {
+      if(prevState === - (cardWidth * COUNT_CARDS)) {
+        return 0;
+      }
+      return prevState - cardWidth;
+    })
+  }
 
   useEffect(() => {
     setPages(
@@ -19,15 +44,15 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
         return cloneElement(child, {
           style: {
             height: '100%',
-            minWidth: `${CARD_WIDTH}px`,
-            maxWidth: `${CARD_WIDTH}px`,
+            minWidth: `${cardWidth}px`,
+            maxWidth: `${cardWidth}px`,
           }
         })
       })
     );
     // const interval = setInterval(() => {
     //   handleClickRight();
-    // }, 2500)
+    // }, 2500);
 
     // return () => {
     //   clearInterval(interval);
