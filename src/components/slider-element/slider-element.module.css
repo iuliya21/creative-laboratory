@@ -2,12 +2,25 @@
   width: 270px;
   height: 360px;
   vertical-align: bottom;
+
+  @media (max-width: 530px) {
+    width: 225px;
+    height: 300px;
+  }
+  @media (max-width: 400px) {
+    width: 168px;
+    height: 225px;
+  }
 }
 
 .elementInfo {
   margin: 0;
   text-align: end;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-size: 14px;
   font-weight: 600;
+
+  @media (max-width: 400px) {
+    font-size: 12px;
+  }
 }

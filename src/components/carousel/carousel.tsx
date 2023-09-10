@@ -34,17 +34,6 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
     // }
   }, []);
 
-  const handleClickRight = () => {
-    setOffset((currentOffset) => {
-      const newOffset = currentOffset - CARD_WIDTH;
-      const maxOffset = -(CARD_WIDTH * (pages.length - 1));
-      if(maxOffset === currentOffset) {
-        return 0;
-      }
-      return newOffset;
-    })
-  }
-
   return (
     <div className={styles.mainContainer}>
       <div className={styles.window}>

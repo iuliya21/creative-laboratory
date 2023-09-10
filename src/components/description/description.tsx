@@ -12,7 +12,7 @@ const Description: React.FC = () => {
         <h1 className={styles.title}>Интерьерные игрушки ручной работы</h1>
         <div className={styles.container}>
           <Carousel>
-            {elementsSlider.map((item, index) => (
+            {elementsSlider.map((item) => (
               <SliderElement
                 key={uuid()}
                 imageUrl={item.url}

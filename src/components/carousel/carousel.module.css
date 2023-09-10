@@ -9,6 +9,13 @@
   height: 100%;
   max-width: 270px;
   overflow: hidden;
+
+  @media (max-width: 530px) {
+    max-width: 225px;
+  }
+  @media (max-width: 400px) {
+    max-width: 168px;
+  }
 }
 
 .items {

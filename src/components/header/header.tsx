@@ -7,7 +7,7 @@ import Menu from "../menu/menu";
 import { useSelector } from "react-redux";
 import { RootState } from "../../services/store";
 import { categories } from "../../utils/utils";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import BurgerMenu from "../burger-menu/burger-menu";
 
 const Header: React.FC = () => {
   const categoryCurrent = useSelector(
@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   );
 
   const location = useLocation();
-  const isMainPage = location.pathname === "/creative-laboratory/";
+  const isMainPage = location.pathname === "/creative-laboratory";
 
   const [openMenu, setOpenMenu] = useState(false);
 
@@ -26,7 +26,11 @@ const Header: React.FC = () => {
   };
 
   return (
-    <nav className={styles.header}>
+    <nav
+      className={
+        isMainPage ? `${styles.header}` : `${styles.header} ${styles.hidden}`
+      }
+    >
       {isMainPage ? <Menu header={categoryCurrent} items={categories} /> : ""}
       <ul
         className={
@@ -36,7 +40,7 @@ const Header: React.FC = () => {
         <li>
           <NavLink
             end
-            to="/creative-laboratory/"
+            to="/creative-laboratory"
             className={({ isActive }) =>
               isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
             }
@@ -86,7 +90,7 @@ const Header: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SlSocialVkontakte color="white" size={23} />
+          <SlSocialVkontakte color="white" size={21} />
         </a>
         <a
           className={styles.linkSocial}
@@ -106,11 +110,7 @@ const Header: React.FC = () => {
         </a>
       </div>
       <div className={styles.burgerMenu} onClick={() => handleMenu()}>
-        {openMenu ? (
-          <AiOutlineClose color="#D3D3D3" size={25} />
-        ) : (
-          <AiOutlineMenu color="#D3D3D3" size={25} />
-        )}
+        <BurgerMenu isOpenBurgerMenu={openMenu} />
       </div>
     </nav>
   );
