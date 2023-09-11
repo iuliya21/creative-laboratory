@@ -1,4 +1,4 @@
-import { useMatch, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "./card.module.css";
 
 type CardProps = {
@@ -30,7 +30,7 @@ const Card: React.FC<CardProps> = ({ image, title, price, openModal, id }) => {
             alt={title}
             className={styles.image}
             onClick={() => {
-              navigate(`/creative-laboratory/toy/${id}`);
+              navigate(`/toy/${id}`);
               openModal();
             }}
           />

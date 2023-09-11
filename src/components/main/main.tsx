@@ -51,7 +51,7 @@ const Main: React.FC = () => {
   };
 
   const hideModal = () => {
-    navigate("/creative-laboratory");
+    navigate("/");
     closeModal();
   };
 
