@@ -5,9 +5,16 @@
   padding: 25px;
 }
 
-.closeButton {  
+.closeButton {
   cursor: pointer;
   position: absolute;
   right: 30px;
   top: 20px;
+
+  @media (max-width: 600px) {
+    right: 20px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+  }
 }

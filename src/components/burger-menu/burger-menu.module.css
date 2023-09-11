@@ -3,6 +3,10 @@
   flex-direction: column;
   cursor: pointer;
   width: 30px;
+
+  @media (max-width: 465px) {
+    margin-top: 5px;
+  }
 }
 
 .bar {
@@ -12,10 +16,20 @@
   margin: 4px 0;
   transition: 0.4s;
   transform-origin: center;
+
+  @media (max-width: 465px) {
+    width: 20px;
+    height: 2px;
+    margin: 2px 0;
+  }
 }
 
 .burger.active .bar:nth-child(1) {
   transform: rotate(-45deg) translate(-10px, 5px);
+  
+  @media (max-width: 465px) {
+    transform: rotate(-45deg) translate(-3.5px, 5px);
+  }
 }
 
 .burger.active .bar:nth-child(2) {
@@ -23,5 +37,9 @@
 }
 
 .burger.active .bar:nth-child(3) {
-  transform: rotate(45deg) translate(-10px, -5px)
+  transform: rotate(45deg) translate(-10px, -5px);
+
+  @media (max-width: 465px) {
+    transform: rotate(45deg) translate(-3.5px, -5px);
+  }
 }

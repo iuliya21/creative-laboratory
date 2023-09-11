@@ -41,7 +41,7 @@ const Card: React.FC<CardProps> = ({ image, title, price, openModal, id }) => {
           <button
             className={styles.button}
             onClick={() => {
-              navigate(`/toy/${id}`);
+              navigate(`/creative-laboratory/toy/${id}`);
               openModal();
             }}
           >
