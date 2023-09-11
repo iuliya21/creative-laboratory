@@ -21,6 +21,13 @@
   }
 }
 
+.rightContainer {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  min-width: 65%;
+}
+
 .header.hidden {
   justify-content: end;
   column-gap: 43px;
@@ -32,6 +39,7 @@
   column-gap: 30px;
   margin: 0;
   padding: 0;
+  justify-items: center;
 
   @media (max-width: 1000px) {
     column-gap: 15px;

@@ -30,7 +30,7 @@ const Card: React.FC<CardProps> = ({ image, title, price, openModal, id }) => {
             alt={title}
             className={styles.image}
             onClick={() => {
-              navigate(`/toy/${id}`);
+              navigate(`/creative-laboratory/toy/${id}`);
               openModal();
             }}
           />
