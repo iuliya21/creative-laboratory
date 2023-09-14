@@ -26,7 +26,7 @@ export const sliceToys = createSlice({
         state.status = "resolved";
         state.toys = action.payload;
       })
-      .addCase(getData.rejected, (state, action) => {
+      .addCase(getData.rejected, (state) => {
         state.status = "rejected";
       });
   },

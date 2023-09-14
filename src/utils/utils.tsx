@@ -18,15 +18,19 @@ export const elementsSlider = [
 export const allCategory = "Все"; 
 export const newYearCategory = "Новый год 2024"; 
 export const textileCategory = "Текстильные интерьерные игрушки"; 
-export const fimoDollCategory = "Игрушки из пластика fimo doll"; 
-export const chinaDollCategory = "Фарфоровые куклы в стиле chinadoll"; 
-export const woodCategory = "Деревянные игрушки"; 
+export const fimoDollCategory = "Куклы из полимерной глины fimodoll"; 
+export const farforCategory = "Будуарные, фарфоровые куклы ChinaDoll"; 
+export const woodCategory = "Деревянные игрушки";
+export const flumoCategory = "Игрушки из пластика flumo";
+export const teddyCategory = "Игрушки в технике Тедди";
 
 export const categories = [
   allCategory,
   newYearCategory,
   textileCategory,
   fimoDollCategory,
-  chinaDollCategory,
+  farforCategory,
   woodCategory,
+  flumoCategory,
+  teddyCategory
 ];

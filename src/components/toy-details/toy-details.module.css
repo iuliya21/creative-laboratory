@@ -9,7 +9,7 @@
 
 .title {
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
 
   @media (max-width: 600px) {
     font-size: 18px;
@@ -20,22 +20,15 @@
 }
 
 .image {
-  width: 80%;
-  height: 80%;
   border-radius: 10px;
-
-  @media (max-width: 600px) {
-    width: 70%;
-    height: 70%;
-  }
+  max-height: 70vh;
 }
 
 .price {
   margin: 0;
   font-weight: 500;
   font-size: 18px;
-  margin: 0 60px 0 0;
-  align-self: flex-end;
+  align-self: center;
 
   @media (max-width: 600px) {
     font-size: 16px;
@@ -43,11 +36,11 @@
 }
 
 .subtitle {
-  margin: 0 60px 0 0;
-  text-align: right;
+  margin: 0;
+  text-align: center;
   font-size: 18px;
   font-weight: 500;
-  align-self: flex-end;
+  align-self: center;
 
   @media (max-width: 600px) {
     font-size: 16px;

@@ -1,0 +1,32 @@
+.container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+
+  @media (max-width: 600px) {
+  margin-top: 70px;
+  }
+}
+
+.image {
+  width: 460px;
+  height: 460px;
+
+  @media (max-width: 600px) {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.text {
+  margin: 0;
+  font-family: "BadScript";
+  font-size: 32px;
+  font-weight: 600;
+
+  @media (max-width: 600px) {
+    font-size: 28px;
+  }
+}

@@ -11,6 +11,8 @@
 .image {
   width: 160px;
   height: 213px;
+  object-position: center top;
+  object-fit: cover;
   border-radius: 5px;
   cursor: pointer;
 }

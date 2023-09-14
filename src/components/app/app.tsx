@@ -11,6 +11,7 @@ import Delivery from "../../pages/delivery/delivery";
 import Reviews from "../../pages/reviews/reviews";
 import Footer from "../footer/footer";
 import ToyDetails from "../toy-details/toy-details";
+import ErrorPage from "../../pages/not-found/not-found";
 
 const App: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -30,6 +31,7 @@ const App: React.FC = () => {
           <Route path="/creative-laboratory/author" element={<Author />} />
           <Route path="/creative-laboratory/delivery" element={<Delivery />} />
           <Route path="/creative-laboratory/reviews" element={<Reviews />} />
+          <Route path="*" element={<ErrorPage />}/>
         </Routes>
       </div>
       <Footer />

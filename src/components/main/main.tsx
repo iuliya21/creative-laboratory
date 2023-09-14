@@ -17,8 +17,10 @@ import {
   newYearCategory,
   textileCategory,
   fimoDollCategory,
-  chinaDollCategory,
+  farforCategory,
   woodCategory,
+  flumoCategory,
+  teddyCategory,
 } from "../../utils/utils";
 
 const Main: React.FC = () => {
@@ -40,10 +42,20 @@ const Main: React.FC = () => {
 
   let toysTextile: Toy[] = [];
   let toysNewYear: Toy[] = [];
+  let toysFimodoll: Toy[] = [];
+  let toysFarfor: Toy[] = [];
+  let toysWood: Toy[] = [];
+  let toysFlumo: Toy[] = [];
+  let toysTeddy: Toy[] = [];
 
   if (Array.isArray(toys)) {
     toysTextile = toys.filter((item) => item.category === "textile");
     toysNewYear = toys.filter((item) => item.category === "newyear");
+    toysFimodoll = toys.filter((item) => item.category === "fimodoll");
+    toysTeddy = toys.filter((item) => item.category === "teddy");
+    toysFarfor = toys.filter((item) => item.category === "farfor");
+    toysWood = toys.filter((item) => item.category === "wood");
+    toysFlumo = toys.filter((item) => item.category === "flumo");
   }
 
   const showModal = () => {
@@ -77,6 +89,81 @@ const Main: React.FC = () => {
         categoryCurrent === textileCategory) && (
         <Section title="Текстильные интерьерные игрушки">
           {toysTextile.map((item) => (
+            <Card
+              key={uuid()}
+              image={item.img}
+              title={item.name}
+              price={item.price}
+              openModal={() => showModal()}
+              id={item.id}
+            />
+          ))}
+        </Section>
+      )}
+      {(categoryCurrent === allCategory ||
+        categoryCurrent === fimoDollCategory) && (
+        <Section title="Куклы из полимерной глины fimodoll">
+          {toysFimodoll.map((item) => (
+            <Card
+              key={uuid()}
+              image={item.img}
+              title={item.name}
+              price={item.price}
+              openModal={() => showModal()}
+              id={item.id}
+            />
+          ))}
+        </Section>
+      )}
+      {(categoryCurrent === allCategory ||
+        categoryCurrent === teddyCategory) && (
+        <Section title="Игрушки в технике Teddy">
+          {toysTeddy.map((item) => (
+            <Card
+              key={uuid()}
+              image={item.img}
+              title={item.name}
+              price={item.price}
+              openModal={() => showModal()}
+              id={item.id}
+            />
+          ))}
+        </Section>
+      )}
+      {(categoryCurrent === allCategory ||
+        categoryCurrent === farforCategory) && (
+        <Section title="Будуарные и фарфоровые куклы ChinaDoll">
+          {toysFarfor.map((item) => (
+            <Card
+              key={uuid()}
+              image={item.img}
+              title={item.name}
+              price={item.price}
+              openModal={() => showModal()}
+              id={item.id}
+            />
+          ))}
+        </Section>
+      )}
+      {(categoryCurrent === allCategory ||
+        categoryCurrent === flumoCategory) && (
+        <Section title="Игрушки из пластика flumo">
+          {toysFlumo.map((item) => (
+            <Card
+              key={uuid()}
+              image={item.img}
+              title={item.name}
+              price={item.price}
+              openModal={() => showModal()}
+              id={item.id}
+            />
+          ))}
+        </Section>
+      )}
+      {(categoryCurrent === allCategory ||
+        categoryCurrent === woodCategory) && (
+        <Section title="Деревянные игрушки">
+          {toysWood.map((item) => (
             <Card
               key={uuid()}
               image={item.img}

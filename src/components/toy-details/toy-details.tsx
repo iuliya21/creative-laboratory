@@ -26,8 +26,8 @@ const ToyDetails: React.FC = () => {
     <div className={styles.container}>
       <h3 className={styles.title}>{currentToy.name}</h3>
       <img src={currentToy.img} alt={currentToy.name} className={styles.image}/>
-      <p className={styles.price}>{currentToy.price} &#8381;</p>
       <p className={styles.subtitle}>{currentToy.description}</p>
+      <p className={styles.price}>{currentToy.price} &#8381;</p>
     </div>
   ) : <div></div>;
 };

@@ -9,7 +9,7 @@
   cursor: pointer;
   position: absolute;
   right: 30px;
-  top: 20px;
+  top: 0;
 
   @media (max-width: 600px) {
     right: 20px;
