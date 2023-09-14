@@ -24,7 +24,6 @@
   max-width: 160px;
 
   @media (max-width: 530px) {
-    max-width: 120px;
     font-size: 12px;
   }
 }
