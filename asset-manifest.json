@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/creative-laboratory/static/css/main.ea9ad344.css",
-    "main.js": "/creative-laboratory/static/js/main.d52a953a.js",
+    "main.css": "/creative-laboratory/static/css/main.2b035442.css",
+    "main.js": "/creative-laboratory/static/js/main.0b72c2a2.js",
     "static/media/Rubik-Medium.ttf": "/creative-laboratory/static/media/Rubik-Medium.0e121b4fa4d6e9bc5c69.ttf",
     "static/media/Rubik-Regular.ttf": "/creative-laboratory/static/media/Rubik-Regular.55fa11cdc8b9a3ee842f.ttf",
     "static/media/Raleway-Medium.ttf": "/creative-laboratory/static/media/Raleway-Medium.601cda68c7b7bbcc9a12.ttf",
     "static/media/Raleway-SemiBold.ttf": "/creative-laboratory/static/media/Raleway-SemiBold.cc770b2afb65067aae51.ttf",
     "static/media/BadScript-Regular.ttf": "/creative-laboratory/static/media/BadScript-Regular.a7245c626448ab33b310.ttf",
     "index.html": "/creative-laboratory/index.html",
-    "main.ea9ad344.css.map": "/creative-laboratory/static/css/main.ea9ad344.css.map",
-    "main.d52a953a.js.map": "/creative-laboratory/static/js/main.d52a953a.js.map"
+    "main.2b035442.css.map": "/creative-laboratory/static/css/main.2b035442.css.map",
+    "main.0b72c2a2.js.map": "/creative-laboratory/static/js/main.0b72c2a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea9ad344.css",
-    "static/js/main.d52a953a.js"
+    "static/css/main.2b035442.css",
+    "static/js/main.0b72c2a2.js"
   ]
 }
