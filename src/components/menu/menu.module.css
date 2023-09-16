@@ -6,6 +6,9 @@
     font-size: 14px;
     min-width: fit-content;
   }
+  @media (max-width: 420px) {
+    font-size: 12px;
+  }
 }
 
 .headerContainer {
@@ -17,11 +20,18 @@
   @media (max-width: 400px) {
     column-gap: 5px;
   }
+  @media (max-width: 360px) {
+    align-items: baseline;
+  }
 }
 
 .header {
   color: #d3d3d3;
   margin: 0;
+
+  @media (max-width: 360px) {
+    max-width: 200px;
+  }
 }
 
 .triangle {

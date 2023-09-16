@@ -1,11 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { sliceToys } from './sliceGetData';
+import { sliceToys, sliceToysAnother } from './sliceGetData';
 import { sliceDetails } from './sliceDetailsToy';
 import { sliceCategory } from './sliceCategorySelected';
 
 export const store = configureStore({
   reducer: {
     data: sliceToys.reducer,
+    dataAnother: sliceToysAnother.reducer,
     details: sliceDetails.reducer,
     category: sliceCategory.reducer,
   },

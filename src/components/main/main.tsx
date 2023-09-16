@@ -33,6 +33,7 @@ const Main: React.FC = () => {
   );
 
   const toys = useSelector<RootState | undefined>((store) => store?.data?.toys);
+  const toysAnother = useSelector<RootState | undefined>((store) => store?.dataAnother?.toys);
 
   useEffect(() => {
     if (_id) {
@@ -48,13 +49,13 @@ const Main: React.FC = () => {
   let toysFlumo: Toy[] = [];
   let toysTeddy: Toy[] = [];
 
-  if (Array.isArray(toys)) {
+  if (Array.isArray(toys) && Array.isArray(toysAnother)) {
     toysTextile = toys.filter((item) => item.category === "textile");
     toysNewYear = toys.filter((item) => item.category === "newyear");
     toysFimodoll = toys.filter((item) => item.category === "fimodoll");
     toysTeddy = toys.filter((item) => item.category === "teddy");
     toysFarfor = toys.filter((item) => item.category === "farfor");
-    toysWood = toys.filter((item) => item.category === "wood");
+    toysWood = toys.filter((item) => item.category === "wood").concat(toysAnother.filter((item) => item.category === "wood"));
     toysFlumo = toys.filter((item) => item.category === "flumo");
   }
 

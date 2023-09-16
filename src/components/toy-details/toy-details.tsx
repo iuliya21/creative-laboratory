@@ -10,13 +10,19 @@ const ToyDetails: React.FC = () => {
   const { _id } = useParams();
   const [currentToy, setCurrentToy] = useState<Toy | null | undefined>(null);
   const toys = useSelector<RootState, Toy[] | null>((store) => store?.data?.toys);
+  const toysAnother = useSelector<RootState | undefined>((store) => store?.dataAnother?.toys);
 
   useEffect(() => {
-    if (toys) {
-      const toy = toys.find((toy) => toy.id === _id);
+    if (Array.isArray(toys) && Array.isArray(toysAnother)) {
+      const toysCurrent = toys.concat(toysAnother);
+      const toy = toysCurrent.find((toy) => toy.id === _id);
       setCurrentToy(toy);
     }
-  }, [_id, toys]);
+    // if (toys) {
+    //   const toy = toys.find((toy) => toy.id === _id);
+    //   setCurrentToy(toy);
+    // }
+  }, [_id, toys, toysAnother]);
 
   if (!toys) {
     return <p className={styles.loader}>Загрузка...</p>;

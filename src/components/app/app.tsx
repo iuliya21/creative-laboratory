@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./app.module.css";
 import Header from "../header/header";
 import Main from "../main/main";
-import { getData } from "../../services/sliceGetData";
+import { getData, getDataAnother } from "../../services/sliceGetData";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../services/store";
 import { Routes, Route } from "react-router-dom";
@@ -18,6 +18,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     dispatch(getData());
+    dispatch(getDataAnother());
   }, [dispatch]);
 
   return (
