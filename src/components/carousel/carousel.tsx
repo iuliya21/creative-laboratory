@@ -24,7 +24,7 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
     } else {
       setCardWidth(270);
     }
-  }, []);
+  }, [children]);
 
   const handleClickRight = () => {
     setOffset((prevState) => {
@@ -49,12 +49,12 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
     );
     const interval = setInterval(() => {
       handleClickRight();
-    }, 2500);
+    }, 2000);
 
     return () => {
       clearInterval(interval);
     }
-  }, []);
+  }, [children]);
 
   return (
     <div className={styles.mainContainer}>
