@@ -5,7 +5,7 @@ const Reviews: React.FC = () => {
     <div className={styles.reviews}>
       <div className={styles.review}>
         <img
-          src="/creative-laboratory/images/reviews/review1.jpeg"
+          src="/images/reviews/review1.jpeg"
           alt="Игрушка"
           className={styles.image}
         />
@@ -21,7 +21,7 @@ const Reviews: React.FC = () => {
       </div>
       <div className={styles.review}>
         <img
-          src="/creative-laboratory/images/reviews/review2.jpeg"
+          src="/images/reviews/review2.jpeg"
           alt="Игрушка"
           className={styles.image}
         />
@@ -39,7 +39,7 @@ const Reviews: React.FC = () => {
       </div>
       <div className={styles.review}>
         <img
-          src="/creative-laboratory/images/reviews/review3.jpeg"
+          src="/images/reviews/review3.jpeg"
           alt="Игрушка"
           className={styles.image}
         />

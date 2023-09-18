@@ -49,7 +49,7 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
     );
     const interval = setInterval(() => {
       handleClickRight();
-    }, 2000);
+    }, 2500);
 
     return () => {
       clearInterval(interval);

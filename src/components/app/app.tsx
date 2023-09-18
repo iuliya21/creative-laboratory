@@ -26,12 +26,12 @@ const App: React.FC = () => {
       <div>
         <Header />
         <Routes>
-          <Route path="/creative-laboratory/" element={<Main />}>
+          <Route path="/" element={<Main />}>
             <Route path="toy/:_id" element={<ToyDetails />} />
           </Route>
-          <Route path="/creative-laboratory/author" element={<Author />} />
-          <Route path="/creative-laboratory/delivery" element={<Delivery />} />
-          <Route path="/creative-laboratory/reviews" element={<Reviews />} />
+          <Route path="/author" element={<Author />} />
+          <Route path="/delivery" element={<Delivery />} />
+          <Route path="/reviews" element={<Reviews />} />
           <Route path="*" element={<ErrorPage />}/>
         </Routes>
       </div>

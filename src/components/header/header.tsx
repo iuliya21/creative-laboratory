@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   );
 
   const location = useLocation();
-  const isMainPage = location.pathname === "/creative-laboratory/";
+  const isMainPage = location.pathname === "/";
 
   const [openMenu, setOpenMenu] = useState(false);
 
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
           <li>
             <NavLink
               end
-              to="/creative-laboratory/"
+              to="/"
               className={({ isActive }) =>
                 isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
               }
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
           </li>
           <li>
             <NavLink
-              to="/creative-laboratory/author"
+              to="/author"
               className={({ isActive }) =>
                 isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
               }
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
           </li>
           <li>
             <NavLink
-              to="/creative-laboratory/delivery"
+              to="/delivery"
               className={({ isActive }) =>
                 isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
               }
@@ -74,7 +74,7 @@ const Header: React.FC = () => {
           </li>
           <li>
             <NavLink
-              to="/creative-laboratory/reviews"
+              to="/reviews"
               className={({ isActive }) =>
                 isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
               }

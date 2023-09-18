@@ -32,7 +32,7 @@ const Delivery: React.FC = () => {
         </p>
       </div>
       <img
-        src="/creative-laboratory/images/delivery.jpeg"
+        src="/images/delivery.jpeg"
         alt="Подарочная коробка"
         className={styles.image}
       />

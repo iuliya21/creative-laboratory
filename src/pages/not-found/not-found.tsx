@@ -4,8 +4,8 @@ const ErrorPage: React.FC = () => {
   return (
     <div className={styles.container}>
       <img
-        src="/creative-laboratory/images/404.jpeg"
-        alt=""
+        src="/images/404.jpeg"
+        alt="Страница 404"
         className={styles.image}
       />
       <p className={styles.text}>404 error</p>
