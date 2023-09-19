@@ -25,7 +25,7 @@
   display: flex;
   justify-content: space-between;
   column-gap: 20px;
-  min-width: 65%;
+  min-width: 60%;
 
   @media (max-width: 1250px) {
     min-width: 55%;
