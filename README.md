@@ -1,5 +1,4 @@
-# Проект Creative-laboratory (Интернет-магазин игрушек ручной работы)
-
+<h1 align="center"> Проект Creative-laboratory (Интернет-магазин игрушек)</h1>
 *Ссылка на проект https://creative-laboratory.online*
 
 <h3 align="center"><i>Функциональность</i></h3>
