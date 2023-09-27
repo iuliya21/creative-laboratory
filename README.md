@@ -21,4 +21,4 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="redux" alt="redux" width="45" height="45"/>&nbsp;
 </div>
 
-https://github.com/iuliya21/creative-laboratory/assets/106624168/7d153caa-092c-478e-bae8-5661c561f548
+https://github.com/iuliya21/creative-laboratory/assets/106624168/0216e1ef-11de-4e7a-a201-7eef384a5d2d
